@@ -1,9 +1,9 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=$TEST_ID
 language: node_js
 node_js:
-  - "stable"
-addons:
-    code_climate:
-        repo_token: $TEST_ID
+  - "11.3"
 
 install:
   - npm install
@@ -15,4 +15,4 @@ before_script:
 script:
   - npm test
 after_success:
-  - ./cc-test-reporter after-build --exit-code
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
