@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=true react-scripts test --coverage --env=jsdom",
+    "test": "CI=true react-scripts test --coverage --colors --env=jsdom",
     "eject": "react-scripts eject",
     "fix": "eslint . --fix --ignore-path .gitignore"
   },
@@ -30,6 +30,8 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
     "eslint": "^5.16.0"
   }
 }
