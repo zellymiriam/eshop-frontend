@@ -1,0 +1,29 @@
+.loader {
+    position: absolute;
+    left :45%;
+    top: 45%;
+
+    @keyframes rotation {
+        from { -webkit-transform: rotate(0deg)}
+        to   { -webkit-transform: rotate(360deg)}
+    }
+    .text{
+        position: relative;
+        color: grey;
+    }
+
+    .spinner-icon{
+        text-align: center;
+        animation: linear  2s infinite rotation;
+        -webkit-animation: rotation 2s infinite linear;
+
+        .fa-spinner {
+        font-weight:900;
+        font-size: 50px;
+        color: grey;
+        }
+
+
+    }
+
+}

@@ -1,0 +1,63 @@
+.card {
+    width:279.5px;
+    height:auto;
+    border: 1px solid rgba(206, 202, 202, 0.486);
+    cursor: pointer;
+    display: inline-block;
+
+    .image{
+        position: relative;
+        left: 2%;
+        margin-top: 1%;
+        width: 270px;
+        height: 240px;
+
+        img {
+            width: 45vh;
+           height: 40vh;
+        }
+    }
+
+    .actions {
+        left: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        position: relative;
+
+        .edit-icon{
+            margin-left: 10%;
+            margin-right: 60%;
+
+            .fa-edit{
+
+                color: rgb(59, 111, 172);
+            }
+        }
+
+        .delete-icon {
+
+            .fa-trash-alt {
+                color:rgb(190, 83, 83);
+            }
+        }
+    }
+
+    .price {
+        position: relative;
+        left: 1%;
+        margin-top: 1%;
+        color:$color-green-primary;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .title {
+        left: 1%;
+        margin-top: 1%;
+        font-size: 18px;
+        font-weight: 100;
+        position: relative;
+        color:$color-green-primary;
+        text-align: center;
+    }
+}
