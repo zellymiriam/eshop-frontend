@@ -1,0 +1,72 @@
+.auth-form{
+    background-color:#348f8f;
+    width: 50%;
+
+    .form{
+        margin-top:90px;
+        margin-left: 5%;
+        margin-bottom: 5%;
+
+        input{
+            background-color:#348f8f;
+            display:block;
+            margin-top:1%;
+            width:500px;
+            height:30px;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            outline: none;
+        }
+        input::placeholder{
+           color:rgb(73, 72, 72);
+        }
+
+        label{
+            display:block;
+            margin-top:1%;
+            color: aliceblue;
+
+        }
+        .form-label{
+            display: none;
+        }
+        .display{
+            display: none;
+        }
+    }
+
+    .auth-btns{
+        margin-top: 20%;
+        margin-left: 80%;
+        button{
+            border:0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        a{
+            margin-left: -5%;
+        }
+
+        &-active{
+            color:white;
+            background-color: black
+        }
+    }
+    .error {
+        margin-left: 5%;
+        color: rgb(168, 75, 75);
+    }
+
+    .submit{
+        position: relative;
+        color: white;
+        margin-left: 5%;
+        width: 100px;
+        height: 30px;
+        background-color: black;
+    }
+
+
+}

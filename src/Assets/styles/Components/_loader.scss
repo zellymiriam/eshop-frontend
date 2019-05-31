@@ -1,8 +1,8 @@
 .loader {
-    position: absolute;
+   position: absolute;
     left :45%;
     top: 45%;
-
+  
     @keyframes rotation {
         from { -webkit-transform: rotate(0deg)}
         to   { -webkit-transform: rotate(360deg)}
