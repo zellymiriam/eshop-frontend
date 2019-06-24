@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router
 import PropTypes from 'prop-types';
 import NavBar from './common/NavBar';
 import Home from './Home/home';
+import Signup from './Auth/signup';
+import Login from './Auth/login';
 
 export const NotFound = () => (
   <h1>Page Not Found</h1>
@@ -21,6 +23,8 @@ class App extends Component {
         {displayNavBar}
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/login" component={Login} />
           <Route component={NotFound} />
         </Switch>
       </Router>

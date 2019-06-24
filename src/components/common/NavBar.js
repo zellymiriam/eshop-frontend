@@ -5,6 +5,18 @@ import { Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 class NavBar extends Component {
+  state ={
+    redirect:false
+  }
+
+  handleRedirect= async()=>{
+    await this.setState({redirect:true});
+
+    if (this.state.redirect){
+      return <Redirect to='/signup'/>;
+    }
+
+  }
 
   render() {
     return (
@@ -26,7 +38,7 @@ class NavBar extends Component {
               <input  placeholder="search..." />
             </div>
             <div className="nav-right">
-              <li><Link to="/sign-up">Sign Up</Link></li>
+              <li onClick={()=>this.handleRedirect}><a >Sign Up</a></li>
               <li><Link to="/login">Login</Link></li>
               <li><Link to="/profile">Profile</Link></li>
             </div>
